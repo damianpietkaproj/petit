@@ -7,7 +7,7 @@
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
-                    "style": "sass"
+                    "style": "scss"
                 }
             },
             "root": "",
@@ -24,9 +24,9 @@
                         "tsConfig": "tsconfig.app.json",
                         "aot": false,
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/sass/styles.sass"],
+                        "styles": ["src/scss/styles.scss"],
                         "stylePreprocessorOptions": {
-                            "includePaths": ["src/sass"]
+                            "includePaths": ["src/scss"]
                         },
                         "scripts": []
                     },
@@ -82,9 +82,9 @@
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/sass/styles.sass"],
+                        "styles": ["src/scss/styles.scss"],
                         "stylePreprocessorOptions": {
-                            "includePaths": ["src/sass"]
+                            "includePaths": ["src/scss"]
                         },
                         "scripts": []
                     }
@@ -115,5 +115,10 @@
             }
         }
     },
-    "defaultProject": "petit"
+    "defaultProject": "petit",
+    "schematics": {
+        "@schematics/angular:component": {
+            "styleext": "scss"
+        }
+    }
 }
